@@ -15,5 +15,5 @@ session = Session()
 
 def update_record(src, tar):
     for k in tar.__table__.columns.keys():
-        if k not in ['id'] and getattr(src, k) is not None:
+        if k not in ['id', 'updated_time'] and getattr(src, k) is not None:
             setattr(tar, k, getattr(src, k))
