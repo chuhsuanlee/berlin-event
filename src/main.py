@@ -135,6 +135,6 @@ def choose_source(source_id):
 
 
 if __name__ == "__main__":
-    for i in (1, 2, 3):
+    for i in [1, 2, 3]:
         print "Update {} events from {}".format(WEB_SOURCE[i][0], WEB_SOURCE[i][1])
         choose_source(i)

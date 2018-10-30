@@ -6,11 +6,12 @@ Base = declarative_base()
 
 
 class Event(Base):
-    __tablename__ = 'event'
+    __tablename__ = 'events'
 
     id = Column(Integer, primary_key=True)
     web_source = Column(Integer)
-    item_id = Column(String(45))
+    item_id = Column(String(255))
     date = Column(DateTime)
     title = Column(String(255))
-    updated_time = Column(DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"))
+    created_at = Column(DateTime, nullable=False, server_default=text("CURRENT_TIMESTAMP"))
+    updated_at = Column(DateTime, nullable=False, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"))
