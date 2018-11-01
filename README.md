@@ -15,6 +15,7 @@ Following are the process of deployment:
 3. Since the first part of this project is dockerized, ​[Docker](https://docs.docker.com/install/)​ needs to be installed to run this
 project.
 4. Change the directory to ​**berlin-event​​**, run ​`make exec​​`. After it enters the bash terminal of this docker container, run ​`python main.py`​​. This will update event information from three websites sequentially.  
+  
    This implementation uses some useful libraries:
    * [Beautiful Soup​](https://pypi.org/project/beautifulsoup4/) and ​[Selenium​](https://github.com/SeleniumHQ/docker-selenium/tree/master/StandaloneChrome) are used for scraping and parsing the html information from different websites.
    * [PyMySQL](https://pypi.org/project/PyMySQL/)​ and ​[SQLAlchemy​](https://pypi.org/project/SQLAlchemy/) are used for communicating with database, adding and updating event information.
