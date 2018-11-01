@@ -24,4 +24,4 @@ project.
    **Hello, Berliners!**  
    Here are some ​[Berlin events](http://localhost:3000/events) you might be interested!  
 
-   Click on ​​[Berlin events](http://localhost:3000/events)​ and start to search the events.
+   Click on ​​[Berlin events](http://localhost:3000/events)​ and start to search the events, and here are some [examples](Examples.pdf) of the application.
